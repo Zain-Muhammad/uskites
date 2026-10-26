@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-label="dor-big front">
+  <rect x="62" y="76" width="276" height="22" rx="11" fill="#8a5a2b"/>
+  <rect x="62" y="302" width="276" height="22" rx="11" fill="#8a5a2b"/>
+  <rect x="80" y="96" width="240" height="208" fill="#efe1bf"/>
+  <ellipse cx="200" cy="116" rx="120" ry="16" fill="none" stroke="#fff8e6" stroke-width="12"/><ellipse cx="200" cy="137" rx="120" ry="16" fill="none" stroke="#f2e6c9" stroke-width="12"/><ellipse cx="200" cy="158" rx="120" ry="16" fill="none" stroke="#fff8e6" stroke-width="12"/><ellipse cx="200" cy="179" rx="120" ry="16" fill="none" stroke="#f2e6c9" stroke-width="12"/><ellipse cx="200" cy="200" rx="120" ry="16" fill="none" stroke="#fff8e6" stroke-width="12"/><ellipse cx="200" cy="221" rx="120" ry="16" fill="none" stroke="#f2e6c9" stroke-width="12"/><ellipse cx="200" cy="242" rx="120" ry="16" fill="none" stroke="#fff8e6" stroke-width="12"/><ellipse cx="200" cy="263" rx="120" ry="16" fill="none" stroke="#f2e6c9" stroke-width="12"/><ellipse cx="200" cy="284" rx="120" ry="16" fill="none" stroke="#fff8e6" stroke-width="12"/>
+  <line x1="320" y1="230" x2="380" y2="420" stroke="#e8d9b5" stroke-width="3"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Manufacturing licence placeholder">
+  <rect width="600" height="420" rx="16" fill="#fffdf6"/>
+  <rect x="14" y="14" width="572" height="392" rx="10" fill="none" stroke="#c9a227" stroke-width="4"/>
+  <rect x="26" y="26" width="548" height="368" rx="6" fill="none" stroke="#c9a227" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <circle cx="300" cy="92" r="40" fill="#1f6f43"/>
+  <path d="M300 64 l9 19 21 3 -15 15 4 21 -19 -10 -19 10 4 -21 -15 -15 21 -3z" fill="#fff"/>
+  <text x="300" y="166" font-family="Georgia, serif" font-size="26" font-weight="700" text-anchor="middle" fill="#1b1f3b">KITE MANUFACTURING LICENCE</text>
+  <text x="300" y="196" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Issued under the Punjab Kite Flying regulations</text>
+  <line x1="120" y1="236" x2="480" y2="236" stroke="#ddd"/>
+  <text x="300" y="270" font-family="Arial" font-size="15" text-anchor="middle" fill="#777">Replace this image with a scan / photo of your licence</text>
+  <text x="300" y="294" font-family="Arial" font-size="13" text-anchor="middle" fill="#999">assets/images/licence-placeholder.svg</text>
+  <rect x="430" y="310" width="110" height="60" rx="6" fill="none" stroke="#1f6f43" stroke-width="2"/>
+  <text x="485" y="345" font-family="Arial" font-size="13" font-weight="700" text-anchor="middle" fill="#1f6f43">OFFICIAL SEAL</text>
+</svg>

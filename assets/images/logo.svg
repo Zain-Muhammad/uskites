@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 136" role="img" aria-label="US Kites">
+  <!-- Redrawn from the US Kites post artwork. Replace with the original logo file if available. -->
+  <!-- left ribbon loop -->
+  <path d="M74 44 C 28 52, 26 104, 66 116" fill="none" stroke="#e3121b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M84 56 C 50 66, 48 100, 74 108" fill="none" stroke="#0b1f5c" stroke-width="5" stroke-linecap="round"/>
+  <!-- kite -->
+  <g transform="rotate(-14 136 28)">
+    <path d="M136 4 L136 28 L114 28 Z" fill="#e3121b"/>
+    <path d="M136 4 L158 28 L136 28 Z" fill="#1e63d6"/>
+    <path d="M114 28 L136 28 L136 52 Z" fill="#ffd200"/>
+    <path d="M136 28 L158 28 L136 52 Z" fill="#0b1f5c"/>
+    <path d="M136 4 L158 28 L136 52 L114 28 Z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <path d="M132 52 C 124 60, 104 52, 92 62" fill="none" stroke="#0b1f5c" stroke-width="2" stroke-linecap="round"/>
+  <!-- wordmark -->
+  <g font-family="'Arial Black', 'Arial Bold', Arial, sans-serif" font-weight="900" font-style="italic" paint-order="stroke" stroke="#fff" stroke-width="7" stroke-linejoin="round">
+    <text x="98" y="88" font-size="46" fill="#e3121b">US</text>
+    <text x="62" y="122" font-size="40" fill="#0b1f5c" letter-spacing="1">KITES</text>
+  </g>
+  <!-- underline swoosh -->
+  <path d="M58 129 Q 150 132 238 116" fill="none" stroke="#e3121b" stroke-width="5" stroke-linecap="round"/>
+</svg>

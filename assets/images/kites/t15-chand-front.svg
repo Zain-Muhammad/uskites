@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-label="t15-chand front">
+  <defs><clipPath id="k"><path d="M200 30 L370 200 L200 370 L30 200 Z"/></clipPath></defs>
+  <g >
+    <g clip-path="url(#k)" opacity="1"><rect width="400" height="400" fill="#2a9d8f"/>
+      <circle cx="190" cy="190" r="70" fill="#fdf6e3"/><circle cx="215" cy="175" r="62" fill="#2a9d8f"/>
+      <polygon points="250,150 258,172 281,172 263,186 270,208 250,195 230,208 237,186 219,172 242,172" fill="#fdf6e3"/></g>
+  </g>
+  <path d="M200 30 L370 200 L200 370 L30 200 Z" fill="none" stroke="#1b1f3b" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M200 362 L172 410 L228 410 Z" fill="#f7b500" opacity="1"/>
+</svg>

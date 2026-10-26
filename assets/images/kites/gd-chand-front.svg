@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-label="gd-chand front">
+  <defs><clipPath id="k"><path d="M200 30 L370 200 L200 370 L30 200 Z"/></clipPath></defs>
+  <g >
+    <g clip-path="url(#k)" opacity="1"><rect width="400" height="400" fill="#264653"/><circle cx="200" cy="200" r="85" fill="#f7b500"/></g>
+  </g>
+  <path d="M200 30 L370 200 L200 370 L30 200 Z" fill="none" stroke="#1b1f3b" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M200 360 L150 425 L250 425 Z" fill="#f7b500" opacity="1"/>
+</svg>

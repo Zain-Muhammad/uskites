@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-label="t15-plain front">
+  <defs><clipPath id="k"><path d="M200 30 L370 200 L200 370 L30 200 Z"/></clipPath></defs>
+  <g >
+    <g clip-path="url(#k)" opacity="1"><rect width="400" height="400" fill="#f7b500"/></g>
+  </g>
+  <path d="M200 30 L370 200 L200 370 L30 200 Z" fill="none" stroke="#1b1f3b" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M200 362 L172 410 L228 410 Z" fill="#f77f00" opacity="1"/>
+</svg>
