@@ -103,13 +103,14 @@
     licence: greet + "Please share a copy of your kite manufacturing licence (" + C.licence.number + ").",
   };
 
+  function unitLabel(p, n) { return n === 1 ? p.unit : p.unit + "s"; }
   function priceText(p) {
     return p.price != null ? C.currency + " " + p.price.toLocaleString("en-PK") + " / " + p.unit : null;
   }
   function orderLines(items) {
     return items.map(function (it) {
       var p = productById[it.id];
-      return "• " + p.name + " × " + it.qty + " " + p.unit +
+      return "• " + p.name + " × " + it.qty + " " + unitLabel(p, it.qty) +
         (priceText(p) ? " (" + priceText(p) + ")" : "");
     }).join("\n");
   }
@@ -173,7 +174,7 @@
         '<div class="qty-row">' +
           '<div class="qty" role="group" aria-label="Quantity">' +
             '<button type="button" data-qty="-1" aria-label="Decrease quantity">−</button>' +
-            '<input type="number" inputmode="numeric" min="1" max="999" value="1" aria-label="Quantity in ' + p.unit + '">' +
+            '<input type="number" inputmode="numeric" min="1" max="999" value="1" aria-label="Quantity (' + unitLabel(p, 2) + ')">' +
             '<button type="button" data-qty="1" aria-label="Increase quantity">+</button>' +
           "</div>" +
           '<span class="qty-unit">' + p.unit + "</span>" +
@@ -202,7 +203,10 @@
       var input = $("input", card);
       var orderBtn = $("[data-order]", card);
       var qty = function () { return Math.max(1, Math.min(999, parseInt(input.value, 10) || 1)); };
-      var updateHref = function () { orderBtn.href = waUrl(orderMessage([{ id: p.id, qty: qty() }])); };
+      var updateHref = function () {
+        orderBtn.href = waUrl(orderMessage([{ id: p.id, qty: qty() }]));
+        $(".qty-unit", card).textContent = unitLabel(p, qty());
+      };
       var setSide = function (side) {
         media.setAttribute("data-side", side);
         $$("[data-side-btn]", media).forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-side-btn") === side)); });
@@ -268,7 +272,7 @@
     $("#drawer-items").innerHTML = order.length ? order.map(function (it) {
       var p = productById[it.id];
       return '<li data-id="' + it.id + '"><img src="' + p.images.front + '" alt="" width="48" height="53">' +
-        '<div><b>' + esc(p.name) + '</b><span class="muted">' + it.qty + " " + p.unit + "</span></div>" +
+        '<div><b>' + esc(p.name) + '</b><span class="muted">' + it.qty + " " + unitLabel(p, it.qty) + "</span></div>" +
         '<div class="qty qty-sm"><button type="button" data-dq="-1" aria-label="Decrease">−</button><span>' + it.qty +
         '</span><button type="button" data-dq="1" aria-label="Increase">+</button></div>' +
         '<button class="icon-btn" type="button" data-rm aria-label="Remove ' + esc(p.name) + '">✕</button></li>';
