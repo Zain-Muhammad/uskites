@@ -225,6 +225,7 @@ p { margin: 0 0 1em; }
 .phone-frame iframe { width: 100%; height: 100%; border: 0; border-radius: 24px; background: #111; display: block; }
 .tt-profile { display: flex; justify-content: center; }
 .tt-profile .tiktok-embed { margin: 0 auto; max-width: 780px; min-width: 288px; width: 100%; }
+.tt-fallback { display: inline-flex; align-items: center; gap: 10px; padding: 18px 24px; border-radius: 16px; background: var(--bg); box-shadow: var(--shadow-lg); color: inherit; text-decoration: none; }
 .tt-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
 @media (max-width: 600px) { .phone-frame { width: min(270px, 80vw); } }
 

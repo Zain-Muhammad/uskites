@@ -25,8 +25,8 @@ window.SITE_CONFIG = {
   // WhatsApp number in international format, digits only (no +, no spaces).
   whatsappNumber: "923298750100",   // 0329 8750100
   whatsappDisplay: "0329 8750100",
-  pickupAddress: "Mochi Gate, Walled City, Lahore", // TODO: real pickup point
-  pickupMapUrl: "https://maps.google.com/?q=Mochi+Gate+Lahore",
+  pickupAddress: "Nabipura, Lalpul, near Bilal Masjid, Lahore",
+  pickupMapUrl: "https://maps.app.goo.gl/LFD3M6DmXedB6tcc8",
   deliveryAreas: "All over Lahore (other cities on request)",
   businessHours: "11:00 AM – 10:00 PM, every day",
 

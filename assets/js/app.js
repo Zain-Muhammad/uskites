@@ -367,11 +367,20 @@
     // Profile: TikTok's creator embed (avatar, follower count and latest video covers).
     $("#tt-profile").innerHTML = '<blockquote class="tiktok-embed" cite="' + ttProfile + '" data-unique-id="' + esc(ttUser) +
       '" data-embed-type="creator"><section><a target="_blank" rel="noopener" href="' + ttProfile + '">@' + esc(ttUser) + "</a></section></blockquote>";
+    // If TikTok is unreachable (network/ISP block, ad blocker) or the profile can't be embedded,
+    // replace the empty blockquote with a simple card so the section never looks broken.
+    var embedFallback = function () {
+      if ($("#tt-profile iframe")) return;
+      $("#tt-profile").innerHTML = '<a class="tt-fallback" target="_blank" rel="noopener" href="' + ttProfile + '">' +
+        '<svg class="ico" aria-hidden="true"><use href="#i-tiktok"/></svg> Watch our latest kite videos on TikTok: <strong>@' + esc(ttUser) + "</strong></a>";
+    };
     var loadEmbed = function () {
       var s = document.createElement("script");
       s.async = true;
       s.src = "https://www.tiktok.com/embed.js";
+      s.onerror = embedFallback;
       document.body.appendChild(s);
+      setTimeout(embedFallback, 8000);
     };
     if ("IntersectionObserver" in window) {
       var io = new IntersectionObserver(function (entries) {
