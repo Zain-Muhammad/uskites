@@ -3,389 +3,324 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Text inside {{ }} is filled in from assets/js/config.js — do not hard-code the year here. -->
-  <title>Basant {{year}} Kites Booking Lahore | Govt Approved | {{brand}}</title>
-  <meta name="description" content="Advance booking open for Basant {{year}}. Buy govt approved 1.5 Tawa kites, Tawa Gudda and cotton Dor Pinna from a licensed kite manufacturer in {{city}}. Order on WhatsApp — home delivery or self pickup on approved dates.">
-  <meta name="keywords" content="Basant {{year}}, Basant {{year}} Lahore, kites booking, govt approved kites, 1.5 tawa kite, tawa gudda, dor pinna, patang Lahore, buy kites online Pakistan, licensed kite manufacturer">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#f7b500">
-  <link rel="canonical" href="{{siteUrl}}/">
+  <title>US Kites — Coming Soon | Basant Kites Lahore</title>
+  <meta name="description" content="US Kites is launching soon. Govt approved 1.5 Tawa kites, Tawa Gudda and cotton Dor Pinna from Lahore. Follow us on TikTok and YouTube for the launch.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1f5c">
+  <link rel="canonical" href="https://uskites.pk/">
 
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_PK">
-  <meta property="og:site_name" content="{{brand}}">
-  <meta property="og:title" content="Basant {{year}} Advance Booking — Govt Approved Kites & Dor Pinna">
-  <meta property="og:description" content="Licensed manufacturer. 1.5 Tawa, Tawa Gudda & cotton Dor Pinna. Order on WhatsApp, delivery or pickup on govt approved dates.">
-  <meta property="og:url" content="{{siteUrl}}/">
-  <meta property="og:image" content="{{siteUrl}}/assets/images/kites/t15-chand-front.svg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Basant {{year}} Kites Booking — {{brand}}">
-  <meta name="twitter:description" content="Govt approved kites & Dor Pinna. Advance booking open — order on WhatsApp.">
+  <meta property="og:site_name" content="US Kites">
+  <meta property="og:title" content="US Kites — Coming Soon">
+  <meta property="og:description" content="Basant kites booking is launching soon. Follow us on TikTok and YouTube.">
+  <meta property="og:url" content="https://uskites.pk/">
+  <meta property="og:image" content="https://uskites.pk/assets/images/kites/t15-chand-front.svg">
 
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Oswald:wght@600;700&family=Kaushan+Script&family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Oswald:wght@600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
 
-  <!-- Hide {{tokens}} until config is applied (auto-reveals after 1.5s if JS fails). -->
-  <style>html.js-pending body{visibility:hidden}</style>
-  <script>document.documentElement.classList.add("js-pending");setTimeout(function(){document.documentElement.classList.remove("js-pending")},1500);</script>
+  <style>
+    :root {
+      --basant: #ffd200;
+      --red: #e3121b;
+      --ink: #0b1f5c;
+      --ink-deep: #061340;
+      --sky: #cfe6ff;
+      --font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-display: "Oswald", "Arial Narrow", Impact, sans-serif;
+      --font-script: "Kaushan Script", "Brush Script MT", cursive;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: var(--font);
+      color: #fff;
+      background: radial-gradient(ellipse at top, #1e3a8a 0%, var(--ink) 45%, var(--ink-deep) 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Sky decoration */
+    .sky { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .sun {
+      position: absolute; top: -140px; left: 50%; transform: translateX(-50%);
+      width: 420px; height: 420px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,210,0,.35) 0%, rgba(255,210,0,0) 70%);
+    }
+    .kite {
+      position: absolute; width: 120px; height: auto; opacity: .9;
+      filter: drop-shadow(0 12px 20px rgba(0,0,0,.35));
+      animation: float 7s ease-in-out infinite;
+    }
+    .kite.k1 { top: 10%; left: 6%; width: 140px; animation-delay: 0s; }
+    .kite.k2 { top: 18%; right: 7%; width: 110px; animation-delay: -2s; }
+    .kite.k3 { bottom: 14%; left: 10%; width: 90px; animation-delay: -4s; opacity: .7; }
+    .kite.k4 { bottom: 10%; right: 12%; width: 100px; animation-delay: -1s; opacity: .75; }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) rotate(-6deg); }
+      50% { transform: translate(10px, -22px) rotate(6deg); }
+    }
+
+    main {
+      position: relative; z-index: 1;
+      flex: 1;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 48px 16px 32px;
+      max-width: 860px; margin: 0 auto; width: 100%;
+    }
+    .logo {
+      background: #fff; border-radius: 18px; padding: 10px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      margin-bottom: 28px;
+    }
+    .logo img { display: block; width: 130px; height: auto; }
+
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,210,0,.12); border: 1px solid rgba(255,210,0,.45);
+      color: var(--basant); font-weight: 600; font-size: .85rem;
+      padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--basant); animation: pulse 1.6s infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,210,0,.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255,210,0,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,210,0,0); }
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 9vw, 5.2rem);
+      line-height: 1; letter-spacing: .02em; text-transform: uppercase;
+    }
+    h1 span { color: var(--basant); }
+    .script {
+      font-family: var(--font-script);
+      font-size: clamp(1.3rem, 4vw, 1.9rem);
+      color: var(--basant); margin-top: 8px;
+    }
+    .lead {
+      max-width: 560px; margin: 18px auto 0;
+      color: rgba(255,255,255,.82); font-size: 1rem; line-height: 1.65;
+    }
+
+    /* Countdown */
+    .countdown {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px; width: 100%; max-width: 560px; margin: 36px auto 0;
+    }
+    .unit {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px; padding: 18px 6px 14px;
+      backdrop-filter: blur(6px);
+      position: relative; overflow: hidden;
+    }
+    .unit::before {
+      content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px;
+      background: linear-gradient(90deg, var(--basant), var(--red));
+    }
+    .num {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 8vw, 3.4rem);
+      line-height: 1; color: #fff;
+      font-variant-numeric: tabular-nums;
+    }
+    .label {
+      display: block; margin-top: 8px;
+      font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(255,255,255,.7);
+    }
+    .launched {
+      display: none; margin-top: 32px;
+      font-family: var(--font-display); font-size: 1.8rem; color: var(--basant);
+    }
+    .launched a { color: inherit; }
+
+    /* Social CTA buttons */
+    .cta-wrap { width: 100%; max-width: 620px; margin: 24px auto 0; }
+    .follow-title {
+      font-weight: 600; font-size: .95rem; color: rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .follow-title .arrow { display: inline-block; color: var(--basant); animation: nudge-down 1.4s ease-in-out infinite; }
+    @keyframes nudge-down { 0%,100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+    .social {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px; margin-top: 14px;
+    }
+    .btn {
+      position: relative; overflow: hidden; isolation: isolate;
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px 14px 14px; border-radius: 18px;
+      text-decoration: none; color: #fff; text-align: left;
+      transition: transform .25s ease, box-shadow .25s ease;
+      animation: attention 4s ease-in-out infinite;
+    }
+    .btn-youtube { animation-delay: 2s; }
+    /* periodic "look at me" wiggle */
+    @keyframes attention {
+      0%, 82%, 100% { transform: translateY(0) scale(1); }
+      86% { transform: translateY(-4px) scale(1.03) rotate(-1deg); }
+      90% { transform: translateY(-4px) scale(1.03) rotate(1deg); }
+      94% { transform: translateY(0) scale(1); }
+    }
+    /* shine sweep */
+    .btn::after {
+      content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; z-index: -1;
+      background: linear-gradient(105deg, transparent, rgba(255,255,255,.35), transparent);
+      transform: skewX(-20deg);
+      animation: shine 3.2s ease-in-out infinite;
+    }
+    .btn-youtube::after { animation-delay: 1.6s; }
+    @keyframes shine { 0% { left: -60%; } 45%, 100% { left: 130%; } }
+    .btn:hover, .btn:focus-visible { transform: translateY(-4px) scale(1.02); animation-play-state: paused; }
+    .btn:focus-visible { outline: 3px solid var(--basant); outline-offset: 3px; }
+
+    .btn-icon {
+      position: relative; flex-shrink: 0;
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; background: rgba(255,255,255,.14);
+    }
+    .btn-icon svg { width: 26px; height: 26px; }
+    /* pulsing ring around icon */
+    .btn-icon::before {
+      content: ""; position: absolute; inset: 0; border-radius: inherit;
+      border: 2px solid rgba(255,255,255,.7);
+      animation: ring 2s ease-out infinite;
+    }
+    @keyframes ring { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(1.45); opacity: 0; } }
+
+    .btn-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; flex: 1; }
+    .btn-main { font-weight: 700; font-size: 1.05rem; }
+    .btn-sub { font-size: .78rem; opacity: .85; margin-top: 3px; }
+    .btn-go {
+      flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%;
+      display: grid; place-items: center; background: #fff;
+      font-weight: 700; transition: transform .25s ease;
+    }
+    .btn:hover .btn-go { transform: translateX(4px); }
+
+    .btn-tiktok {
+      background: linear-gradient(135deg, #111 0%, #000 100%);
+      box-shadow: -3px -3px 0 #25f4ee, 3px 3px 0 #fe2c55, 0 12px 28px rgba(0,0,0,.35);
+    }
+    .btn-tiktok:hover { box-shadow: -5px -5px 0 #25f4ee, 5px 5px 0 #fe2c55, 0 18px 36px rgba(0,0,0,.45); }
+    .btn-tiktok .btn-go { color: #fe2c55; }
+    .btn-youtube {
+      background: linear-gradient(135deg, #ff2a2a 0%, #d10000 100%);
+      box-shadow: 0 12px 28px rgba(255,0,0,.35);
+    }
+    .btn-youtube:hover { box-shadow: 0 18px 38px rgba(255,0,0,.5); }
+    .btn-youtube .btn-go { color: #e00000; }
+    .cta-note { margin-top: 12px; font-size: .78rem; color: rgba(255,255,255,.6); }
+
+    footer {
+      position: relative; z-index: 1;
+      text-align: center; padding: 20px 16px 28px;
+      font-size: .82rem; color: rgba(255,255,255,.55);
+    }
+
+    @media (max-width: 640px) {
+      main { padding-top: 24px; }
+      .logo { margin-bottom: 16px; padding: 8px 14px; }
+      .logo img { width: 96px; }
+      .badge { margin-bottom: 12px; }
+      .lead { margin-top: 12px; font-size: .92rem; line-height: 1.55; }
+      .kite.k1 { width: 80px; top: 4%; left: -10px; }
+      .kite.k2 { width: 70px; top: 6%; right: -6px; }
+      .kite.k3, .kite.k4 { display: none; }
+      .social { grid-template-columns: 1fr; gap: 12px; }
+      .btn { padding: 12px 14px 12px 12px; }
+      .countdown { gap: 8px; margin-top: 28px; }
+      .unit { padding: 14px 2px 10px; border-radius: 12px; }
+      .label { font-size: .62rem; letter-spacing: .08em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .kite, .pulse, .btn, .btn::after, .btn-icon::before, .follow-title .arrow { animation: none; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#kites">Skip to kites</a>
-
-  <!-- Announcement bar -->
-  <div class="announce" role="note">
-    <span class="pulse-dot" aria-hidden="true"></span>
-    <strong>Basant {{year}} advance booking is open</strong> — book now for the best rate and guaranteed stock.
-    <a href="#kites">Book now →</a>
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <img class="kite k1" src="assets/images/kites/t15-chand-front.svg" alt="">
+    <img class="kite k2" src="assets/images/kites/gd-patti-front.svg" alt="">
+    <img class="kite k3" src="assets/images/kites/t15-dorangi-front.svg" alt="">
+    <img class="kite k4" src="assets/images/kites/t15-shatranj-front.svg" alt="">
   </div>
-
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="{{brand}} home">
-        <img src="assets/images/logo.svg" alt="{{brand}}" width="103" height="56">
-        <span class="logo-tagline" data-bind="tagline"></span>
-      </a>
-      <nav class="main-nav" aria-label="Main">
-        <a href="#kites">Kites</a>
-        <a href="#how">How to Order</a>
-        <a href="#delivery">Delivery &amp; Pickup</a>
-        <a href="#licence">Licence</a>
-        <a href="#tiktok" data-tt-only hidden>TikTok</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="btn btn-wa btn-sm" data-wa="general" href="#" target="_blank" rel="noopener">
-        <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span class="hide-sm">WhatsApp </span>Order
-      </a>
-    </div>
-  </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span lang="ur" class="urdu">بسنت {{year}}</span> · {{city}}</p>
-          <h1>Basant {{year}} Kites Booking — <span class="hl">Govt Approved</span> Kites &amp; Dor Pinna</h1>
-          <p class="slogan" data-bind="slogan"></p>
-          <p class="lead">Book your <strong>1.5 Tawa</strong> and <strong>Tawa Gudda</strong> kites and <strong>approved cotton Dor Pinna</strong> from a <strong>licensed kite manufacturer</strong>. Order on WhatsApp in under a minute. We deliver to your door, or you can pick up, on the <strong>govt approved Basant dates</strong>.</p>
+    <div class="logo"><img src="assets/images/logo.svg" alt="US Kites" width="130" height="71"></div>
 
-          <div class="hero-cta">
-            <a class="btn btn-wa btn-lg" data-wa="general" href="#" target="_blank" rel="noopener">
-              <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Book on WhatsApp
-            </a>
-            <a class="btn btn-ghost btn-lg" href="#kites">View kites &amp; designs</a>
-          </div>
+    <span class="badge"><span class="pulse" aria-hidden="true"></span>Launching soon</span>
+    <h1>Coming <span>Soon</span></h1>
+    <p class="script">Fly Higher, Stronger!</p>
+    <p class="lead">Our Basant kites booking store is almost ready. Govt approved 1.5 Tawa kites, Tawa Gudda and cotton Dor Pinna from Lahore — launching in a few days.</p>
 
-          <ul class="hero-trust">
-            <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg> Licensed manufacturer</li>
-            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> 100% approved cotton dor</li>
-            <li><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg> Delivery or self pickup</li>
-          </ul>
-
-          <div class="countdown" id="countdown" aria-live="polite">
-            <p class="countdown-label">Countdown to Basant {{year}}</p>
-            <div class="countdown-grid">
-              <div><b data-cd="d">--</b><span>Days</span></div>
-              <div><b data-cd="h">--</b><span>Hours</span></div>
-              <div><b data-cd="m">--</b><span>Mins</span></div>
-              <div><b data-cd="s">--</b><span>Secs</span></div>
-            </div>
-            <p class="countdown-note" data-bind="datesNote"></p>
-          </div>
-        </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <img class="kite-float k1" src="assets/images/kites/t15-chand-front.svg" alt="" width="260" height="286">
-          <img class="kite-float k2" src="assets/images/kites/gd-patti-front.svg" alt="" width="200" height="220">
-          <img class="kite-float k3" src="assets/images/kites/t15-dorangi-front.svg" alt="" width="150" height="165">
-          <div class="hero-badge">
-            <svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>
-            <div><b>Govt Approved</b><small>Licence # {{licenceNo}}</small></div>
-          </div>
-        </div>
+    <div class="cta-wrap">
+      <p class="follow-title">Be the first to know when booking opens <span class="arrow" aria-hidden="true">↓</span></p>
+      <div class="social">
+        <a class="btn btn-tiktok" href="https://www.tiktok.com/@uskites.pk" target="_blank" rel="noopener">
+          <span class="btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"/></svg></span>
+          <span class="btn-text"><span class="btn-main">Follow on TikTok</span><span class="btn-sub">Kite videos &amp; launch drops</span></span>
+          <span class="btn-go" aria-hidden="true">→</span>
+        </a>
+        <a class="btn btn-youtube" href="https://www.youtube.com/@uskites-j5m" target="_blank" rel="noopener">
+          <span class="btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></span>
+          <span class="btn-text"><span class="btn-main">Subscribe on YouTube</span><span class="btn-sub">Watch the Basant kites first</span></span>
+          <span class="btn-go" aria-hidden="true">→</span>
+        </a>
       </div>
-    </section>
+      <p class="cta-note">Free · one tap · get notified the moment booking opens</p>
+    </div>
 
-    <!-- TRUST STRIP -->
-    <section class="trust-strip" aria-label="Why customers trust us">
-      <div class="container trust-grid">
-        <div><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><b>Licensed Manufacturer</b><span>Registered for Basant {{year}}</span></div>
-        <div><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><b>Approved Material</b><span>Paper, bamboo &amp; cotton only</span></div>
-        <div><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg><b>On-Time Fulfilment</b><span>On govt approved dates</span></div>
-        <div><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg><b>WhatsApp Support</b><span>{{hours}}</span></div>
-      </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="section" id="kites">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Basant {{year}} Collection</p>
-          <h2>Govt Approved 1.5 Tawa, Tawa Gudda &amp; Dor Pinna</h2>
-          <p>Tap a kite to see the <strong>front and back</strong>. Choose a quantity and order on WhatsApp, or add several items to one order.</p>
-        </header>
-
-        <div class="tabs" role="tablist" aria-label="Filter by category" id="tabs"></div>
-        <div class="product-grid" id="product-grid"></div>
-
-        <p class="grid-note"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg> Bulk or wholesale order (100+ pieces)? <a data-wa="wholesale" href="#" target="_blank" rel="noopener">Ask for the wholesale rate on WhatsApp</a>.</p>
-      </div>
-    </section>
-
-    <!-- TIKTOK (filled from config.tiktok; hidden when no username) -->
-    <section class="section section-tiktok" id="tiktok" hidden>
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">See them fly</p>
-          <h2>Watch Our Basant {{year}} Kites on TikTok</h2>
-          <p>Real kites, real flying. See the designs in action before you order.</p>
-        </header>
-        <div class="tt-videos" id="tt-videos"></div>
-        <div class="tt-profile" id="tt-profile"></div>
-        <div class="center tt-cta">
-          <a class="btn btn-tt btn-lg" id="tt-follow" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tiktok"/></svg> <span id="tt-follow-label">Follow on TikTok</span></a>
-          <a class="btn btn-ig btn-lg" data-ig-only data-ig-link hidden href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram</a>
-          <a class="btn btn-wa btn-lg" data-wa="general" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Order on WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="section section-alt" id="how">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Simple 3-step booking</p>
-          <h2>How to Book Basant {{year}} Kites on WhatsApp</h2>
-        </header>
-        <ol class="steps">
-          <li><span class="step-n">1</span><h3>Choose your kites</h3><p>Pick 1.5 Tawa, Tawa Gudda or Dor Pinna. Check the front &amp; back and set the quantity.</p></li>
-          <li><span class="step-n">2</span><h3>Send order on WhatsApp</h3><p>One tap opens WhatsApp with your order already typed. Just add your name and area and press send.</p></li>
-          <li><span class="step-n">3</span><h3>Get it on Basant dates</h3><p>We confirm and reserve your stock. You get home delivery or self pickup on the govt approved dates.</p></li>
-        </ol>
-        <div class="center"><a class="btn btn-wa btn-lg" data-wa="general" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Start my order</a></div>
-      </div>
-    </section>
-
-    <!-- DELIVERY / PICKUP -->
-    <section class="section" id="delivery">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Fulfilment</p>
-          <h2>Home Delivery or Self Pickup on Govt Approved Dates</h2>
-          <p>Kite selling and flying is only allowed on the dates the Government of Punjab notifies. Your advance booking is reserved and handed over on those dates only.</p>
-        </header>
-        <div class="fulfil-grid">
-          <article class="fulfil-card">
-            <svg class="ico ico-lg" aria-hidden="true"><use href="#i-truck"/></svg>
-            <h3>Home Delivery</h3>
-            <p>Delivered to your door: <strong>{{deliveryAreas}}</strong>. We call before arriving. Delivery charges are confirmed on WhatsApp.</p>
-            <a class="btn btn-wa" data-wa="delivery" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Book with delivery</a>
-          </article>
-          <article class="fulfil-card">
-            <svg class="ico ico-lg" aria-hidden="true"><use href="#i-pin"/></svg>
-            <h3>Self Pickup</h3>
-            <p>Collect your order from <strong>{{pickupAddress}}</strong>. Skip the queue: your order is packed and ready with your name on it.</p>
-            <a class="btn btn-ghost" data-bind-href="pickupMapUrl" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
-          </article>
-          <article class="fulfil-card dates-card">
-            <svg class="ico ico-lg" aria-hidden="true"><use href="#i-calendar"/></svg>
-            <h3>Basant {{year}} Dates</h3>
-            <ul class="date-list" id="date-list"></ul>
-            <p class="muted" data-bind="datesNote"></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- LICENCE -->
-    <section class="section section-dark" id="licence">
-      <div class="container licence-grid">
-        <figure class="licence-img">
-          <img data-bind-src="licenceImage" src="assets/images/licence-placeholder.svg" alt="{{brand}} kite manufacturing licence for Basant {{year}}" width="600" height="420" loading="lazy">
-        </figure>
-        <div class="licence-copy">
-          <p class="eyebrow">Verified &amp; Licensed</p>
-          <h2>Govt Registered Kite Manufacturer</h2>
-          <p>{{brand}} is a registered kite manufacturer. Every kite and Dor Pinna we sell is made to the approved specifications and carries the required identification.</p>
-          <dl class="licence-dl">
-            <div><dt>Licence No.</dt><dd>{{licenceNo}}</dd></div>
-            <div><dt>Issued by</dt><dd>{{licenceBy}}</dd></div>
-            <div><dt>Valid till</dt><dd data-bind="licenceValid"></dd></div>
-            <div><dt>Season</dt><dd>Basant {{year}}</dd></div>
-          </dl>
-          <a class="btn btn-wa" data-wa="licence" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Request licence copy</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY BOOK IN ADVANCE (CRO) -->
-    <section class="section">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Don't wait for Basant week</p>
-          <h2>Why Book Your Kites in Advance?</h2>
-        </header>
-        <div class="why-grid">
-          <article><svg class="ico ico-lg" aria-hidden="true"><use href="#i-tag"/></svg><h3>Lock today's rate</h3><p>Kite prices go up in the last days before Basant. Your booking rate is fixed when we confirm your order.</p></article>
-          <article><svg class="ico ico-lg" aria-hidden="true"><use href="#i-box"/></svg><h3>Guaranteed stock</h3><p>Only licensed makers can sell approved kites, so stock is limited. Booked orders are reserved first.</p></article>
-          <article><svg class="ico ico-lg" aria-hidden="true"><use href="#i-shield"/></svg><h3>No legal worries</h3><p>Approved kites and cotton dor only. No metal, nylon or chemical-coated string. Fly with peace of mind.</p></article>
-          <article><svg class="ico ico-lg" aria-hidden="true"><use href="#i-clock"/></svg><h3>No queues on the day</h3><p>Skip the crowded markets. Your order is packed and waiting, or delivered to your rooftop.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SAFETY / COMPLIANCE -->
-    <section class="section section-alt" id="safety">
-      <div class="container safety-grid">
-        <div>
-          <p class="eyebrow">Safe Basant</p>
-          <h2>Approved Kites &amp; Safe Flying Rules</h2>
-          <p>We support a safe and legal Basant. Please follow the Government of Punjab's rules when flying:</p>
-        </div>
-        <ul class="checklist">
-          <li><svg class="ico ok" aria-hidden="true"><use href="#i-check"/></svg> Use only <strong>approved cotton dor</strong>. Never metal, nylon or chemical/glass-coated string.</li>
-          <li><svg class="ico ok" aria-hidden="true"><use href="#i-check"/></svg> Buy only from <strong>licensed manufacturers &amp; sellers</strong>.</li>
-          <li><svg class="ico ok" aria-hidden="true"><use href="#i-check"/></svg> Fly only on the <strong>notified Basant dates</strong> and in permitted areas.</li>
-          <li><svg class="ico ok" aria-hidden="true"><use href="#i-check"/></svg> Keep away from power lines, and watch children on rooftops.</li>
-          <li><svg class="ico ok" aria-hidden="true"><use href="#i-check"/></svg> Motorcyclists: use a safety antenna / neck guard.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SEO CONTENT -->
-    <section class="section seo-content" id="guide">
-      <div class="container narrow">
-        <h2>Basant {{year}} in Lahore: Your Guide to Buying Govt Approved Kites</h2>
-        <p>Basant, the spring kite festival of Punjab, is back, and {{city}} is getting ready for its rooftops to fill with colour again. For <strong>Basant {{year}}</strong> the Government of Punjab allows kite flying only with <strong>approved kites and cotton thread</strong> made by <strong>registered manufacturers</strong>. That is why buying from a licensed source matters more than ever.</p>
-
-        <h3>1.5 Tawa vs Tawa Gudda: which kite should you buy?</h3>
-        <p>The <strong>1.5 Tawa kite</strong> (dedh tawa patang) is the classic Lahori size. It is light, quick and easy to control, which makes it ideal for pecha and for both beginners and experienced flyers. The <strong>Tawa Gudda</strong> is larger and more stable. It holds steady in stronger winds and climbs high, so many families pick it for relaxed, long flying sessions. Most rooftops order a mix of both.</p>
-
-        <h3>Why approved Dor Pinna matters</h3>
-        <p>Metal wire, nylon and chemically coated (glass) string have caused serious accidents in the past and are banned. Our <strong>Dor Pinna</strong> uses approved <strong>cotton thread only</strong>, so you fly within the law and keep your neighbours, motorcyclists and children safe.</p>
-
-        <h3>Advance booking, delivery and pickup</h3>
-        <p>Sales and handover take place only on the <strong>govt approved Basant {{year}} dates</strong>. Booking early with {{brand}} locks in your rate and reserves your stock before the rush. On the approved dates you can choose <strong>home delivery in {{city}}</strong> or <strong>self pickup</strong> from our outlet. To order, send your list on WhatsApp at <a data-wa="general" href="#" target="_blank" rel="noopener">{{waDisplay}}</a>.</p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-alt" id="faq">
-      <div class="container narrow">
-        <header class="section-head">
-          <p class="eyebrow">Questions</p>
-          <h2>Basant {{year}} Booking — FAQs</h2>
-        </header>
-        <div class="faq" id="faq-list">
-          <details><summary>Are your kites govt approved for Basant {{year}}?</summary><p>Yes. {{brand}} is a licensed kite manufacturer (Licence No. {{licenceNo}}, issued by {{licenceBy}}). Our kites and Dor Pinna are made to the approved specifications. You can ask for a copy of the licence on WhatsApp.</p></details>
-          <details><summary>How do I place an order?</summary><p>Tap "Order on WhatsApp" on any kite. WhatsApp opens with your order already typed. Add your name and area and press send. We will confirm your order and the total on WhatsApp.</p></details>
-          <details><summary>When will I receive my kites?</summary><p>Orders are delivered or handed over for pickup only on the govt approved Basant {{year}} dates. We confirm your exact delivery or pickup slot on WhatsApp.</p></details>
-          <details><summary>Do you offer home delivery?</summary><p>Yes, we deliver to {{deliveryAreas}}. Delivery charges depend on your area and are confirmed when you order. You can also pick up from {{pickupAddress}}.</p></details>
-          <details><summary>Is any advance payment required?</summary><p>Payment terms (advance or cash on delivery / pickup) are confirmed with you on WhatsApp when we confirm your order. We never ask for card details on this website.</p></details>
-          <details><summary>What is the difference between 1.5 Tawa and Tawa Gudda?</summary><p>1.5 Tawa is the classic, lighter Lahori kite that is quick and great for pecha. Tawa Gudda is bigger and more stable, and it suits stronger winds and long, high flying.</p></details>
-          <details><summary>Do you sell wholesale to shops?</summary><p>Yes. We supply registered sellers with wholesale rates for orders of 100 pieces or more. Message us on WhatsApp with your quantities.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta">
-      <div class="container final-inner">
-        <div>
-          <h2>Secure Your Basant {{year}} Kites Today</h2>
-          <p>Advance booking is open now. Book early to lock in your rate and get guaranteed stock.</p>
-        </div>
-        <a class="btn btn-wa btn-lg" data-wa="general" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Order on WhatsApp</a>
-      </div>
-    </section>
+    <div class="countdown" id="countdown" role="timer" aria-live="off">
+      <div class="unit"><span class="num" id="cd-days">07</span><span class="label">Days</span></div>
+      <div class="unit"><span class="num" id="cd-hours">00</span><span class="label">Hours</span></div>
+      <div class="unit"><span class="num" id="cd-mins">00</span><span class="label">Minutes</span></div>
+      <div class="unit"><span class="num" id="cd-secs">00</span><span class="label">Seconds</span></div>
+    </div>
+    <p class="launched" id="launched">We're live! <a href="home.html">Visit the store →</a></p>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="logo" href="#top"><img src="assets/images/logo.svg" alt="{{brand}}" width="147" height="80" loading="lazy"><span class="logo-tagline" data-bind="tagline"></span></a>
-        <p>Licensed kite manufacturer in {{city}}. Govt approved kites &amp; cotton Dor Pinna for Basant {{year}}.</p>
-        <p class="muted">Licence No. {{licenceNo}}</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <p><a data-wa="general" href="#" target="_blank" rel="noopener">WhatsApp: {{waDisplay}}</a></p>
-        <p>{{pickupAddress}}</p>
-        <p class="muted">{{hours}}</p>
-        <p data-tt-only hidden><a data-tt-link href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tiktok"/></svg> <span data-tt-handle></span> on TikTok</a></p>
-        <p data-ig-only hidden><a data-ig-link href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg> <span data-ig-handle></span> on Instagram</a></p>
-      </div>
-      <div>
-        <h3>Shop</h3>
-        <p><a href="#kites" data-filter-link="tawa15">1.5 Tawa Kites</a></p>
-        <p><a href="#kites" data-filter-link="gudda">Tawa Gudda</a></p>
-        <p><a href="#kites" data-filter-link="dor">Dor Pinna</a></p>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© <span data-bind="copyrightYear"></span> {{brand}}. Please fly responsibly and follow all Government of Punjab Basant regulations.</p>
-    </div>
-  </footer>
+  <footer>&copy; <span id="year">2026</span> US Kites · Lahore</footer>
 
-  <!-- Order list (multi-item cart) -->
-  <div class="order-bar" id="order-bar" hidden>
-    <button class="order-bar-summary" id="order-open" type="button" aria-controls="order-drawer" aria-expanded="false">
-      <span class="order-count" id="order-count">0</span>
-      <span>items in your order list</span>
-      <span class="order-view">View ▲</span>
-    </button>
-    <a class="btn btn-wa" id="order-send-bar" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Send order</a>
-  </div>
-
-  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
-  <aside class="drawer" id="order-drawer" aria-label="Your order" inert tabindex="-1">
-    <div class="drawer-head">
-      <h2>Your Basant {{year}} Order</h2>
-      <button class="icon-btn" id="order-close" type="button" aria-label="Close">✕</button>
-    </div>
-    <ul class="drawer-items" id="drawer-items"></ul>
-    <form class="drawer-form" id="order-form" novalidate>
-      <fieldset>
-        <legend>Delivery or pickup?</legend>
-        <label class="radio"><input type="radio" name="fulfil" value="Home delivery" checked> Home delivery</label>
-        <label class="radio"><input type="radio" name="fulfil" value="Self pickup"> Self pickup</label>
-      </fieldset>
-      <label>Your name <span class="muted">(optional)</span><input type="text" name="name" autocomplete="name" placeholder="e.g. Ali Raza"></label>
-      <label>Area / address <span class="muted">(optional)</span><input type="text" name="area" autocomplete="address-line1" placeholder="e.g. Model Town, Lahore"></label>
-      <button class="btn btn-wa btn-lg btn-block" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Send order on WhatsApp</button>
-      <p class="muted small center">No payment on this website. We confirm the total on WhatsApp.</p>
-    </form>
-  </aside>
-
-  <!-- Floating WhatsApp -->
-  <a class="wa-float" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
-  </a>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <!-- Icon sprite -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.5h-.01a9.47 9.47 0 0 1-4.83-1.32l-.35-.21-3.59.94.96-3.5-.23-.36a9.46 9.46 0 0 1-1.45-5.05c0-5.23 4.26-9.49 9.5-9.49 2.54 0 4.92.99 6.71 2.79a9.43 9.43 0 0 1 2.78 6.71c0 5.24-4.26 9.49-9.49 9.49m8.08-17.57A11.35 11.35 0 0 0 12.04.6C5.75.6.63 5.72.63 12.01c0 2.01.52 3.97 1.52 5.7L.54 23.6l6.04-1.58a11.4 11.4 0 0 0 5.45 1.39h.01c6.29 0 11.41-5.12 11.41-11.41 0-3.05-1.19-5.91-3.34-8.07"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m7.5 12 3 3 6-6"/></symbol>
-    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M2 6h11v10H2zM13 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2" fill="currentColor"/><circle cx="17" cy="18" r="2" fill="currentColor"/></symbol>
-    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 10h18M8 3v4M16 3v4"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 4h16v12H8l-4 4z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
-    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 11v6M12 7.5v.01"/></symbol>
-    <symbol id="i-tag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 12V3h9l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5" fill="currentColor"/></symbol>
-    <symbol id="i-box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 6v6l4 2"/></symbol>
-    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"/></symbol>
-    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
-    <symbol id="i-flip" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"/></symbol>
-  </svg>
-
-  <script src="assets/js/config.js"></script>
-  <script src="assets/js/app.js" defer></script>
+  <script>
+    (function () {
+      // Fixed launch moment (Pakistan time) so every visitor sees the same countdown.
+      // Change this date to move the launch.
+      var LAUNCH = new Date("2026-11-06T00:00:00+05:00").getTime();
+      var els = {
+        d: document.getElementById("cd-days"),
+        h: document.getElementById("cd-hours"),
+        m: document.getElementById("cd-mins"),
+        s: document.getElementById("cd-secs")
+      };
+      function pad(n) { return n < 10 ? "0" + n : String(n); }
+      function tick() {
+        var diff = Math.max(0, LAUNCH - Date.now());
+        var t = Math.floor(diff / 1000);
+        els.d.textContent = pad(Math.floor(t / 86400));
+        els.h.textContent = pad(Math.floor(t % 86400 / 3600));
+        els.m.textContent = pad(Math.floor(t % 3600 / 60));
+        els.s.textContent = pad(t % 60);
+        if (diff === 0) {
+          clearInterval(timer);
+          document.getElementById("launched").style.display = "block";
+        }
+      }
+      var timer = setInterval(tick, 1000);
+      tick();
+      document.getElementById("year").textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
